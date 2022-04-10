@@ -6,12 +6,13 @@ import Portfolio from "components/Portfolio";
 import Testimonials from "components/Testimonials";
 import Products from "components/Products";
 import Newsletter from "components/Newsletter.tsx";
+import { homeObjOne } from "../DataHero";
 
 export default function Home() {
   return (
     <>
       <ScrollToTop />
-      <Hero />
+      <Hero {...homeObjOne} />
       <Services />
       <Portfolio />
       <Testimonials />

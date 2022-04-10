@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styled from "styled-components";
 import Image from "next/image";
-import logo from "../../assets/food.png";
+import logo from "../../assets/logo.png";
 import { BsToggleOn, BsToggleOff } from "react-icons/bs";
 import { Link as LinkScroll } from "react-scroll";
 
@@ -37,19 +37,19 @@ const Nav = styled.nav`
           background-color: var(--primary-color);
           border-radius: 0.3rem;
           a {
-            color: black;
+            color: #ffffff;
           }
         }
         &:hover {
           background-color: var(--primary-color);
           border-radius: 0.3rem;
           a {
-            color: black;
+            color: #ffffff;
           }
         }
         a {
           text-decoration: none;
-          color: #666;
+          color: #202020;
           font-weight: bold;
           transition: 0.3s ease-in-out;
         }
@@ -88,6 +88,7 @@ const Nav = styled.nav`
     }
   }
   @media screen and (min-width: 280px) and (max-width: 1080px) {
+    height: 13vh;
     position: relative;
     margin: 0;
     z-index: 1;
@@ -140,15 +141,21 @@ const Navbar = () => {
             src={logo}
             alt="Brand Logo"
             className="brandLogo"
-            height={80}
-            width={350}
+            height={50}
+            width={100}
           />
         </div>
         <div className="toggle">
           {navState ? (
-            <BsToggleOn onClick={() => setNavState(false)} color="27ae60" />
+            <BsToggleOn
+              onClick={() => setNavState(false)}
+              color="var(--primary-color)"
+            />
           ) : (
-            <BsToggleOff onClick={() => setNavState(true)} color="27ae60" />
+            <BsToggleOff
+              onClick={() => setNavState(true)}
+              color=" var(--primary-color)"
+            />
           )}
         </div>
       </div>

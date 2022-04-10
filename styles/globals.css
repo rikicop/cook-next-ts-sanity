@@ -1,10 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
 :root {
   --background-color: white;
-  --primary-color: #27ae60;
-  --hr-color: #c4c4c4;
-  --font-family: "Nunito", sans-serif;
+  --primary-color: #2e27ae;
+  --hr-color: #383838;
+  --font-family: "Poppins", "Nunito";
 }
 
 * {
