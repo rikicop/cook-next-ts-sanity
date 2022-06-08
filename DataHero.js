@@ -16,17 +16,17 @@ export const homeObjOne = {
 };
 
 export const homeObjTwo = {
-  primary: true,
-  lightBg: false,
-  lightTopLine: true,
-  lightText: true,
-  lightTextDesc: true,
+  primary: false,
+  lightBg: true,
+  lightTopLine: false,
+  lightText: false,
+  lightTextDesc: false,
   topLine: "Instant Setup",
   headline: "Extremely quick onboarding process",
   description:
     "Once you've joined, our team of specialist will reach out to you and get you set up in minutes.",
   buttonLabel: "Learn More",
-  imgStart: "",
+  imgStart: true,
   img: require("./assets/hero.png"),
   alt: "Vault",
   start: "",
@@ -34,7 +34,7 @@ export const homeObjTwo = {
 
 export const homeObjThree = {
   primary: false,
-  lightBg: true,
+  lightBg: false,
   lightTopLine: false,
   lightText: false,
   lightTextDesc: false,

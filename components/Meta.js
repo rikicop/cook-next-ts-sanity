@@ -13,9 +13,10 @@ const Meta = ({ title, keywords, description }) => {
 };
 
 Meta.defaultProps = {
-  title: "MegaPixeles",
-  keywords: "avisos, pendones,pancartas",
-  description: "Los mejores avisos, pendones y pancartas",
+  title: "Leonardo Luna",
+  keywords:
+    "frontera, sociologia, psicologia, psicopedagogia, educacion, tesis",
+  description: "Doctor en psicologia, psicopedagogia y educacion",
 };
 
 export default Meta;

@@ -23,7 +23,7 @@ export const articles = [
     id: "4",
     title: "Why open ecosystems are the future of app development",
     excerpt:
-      "When app stores entered the mainstream tech culture, they exposed developers to an audience of millions...",
+      "When app stores entered the mainstream tech culture, they exposed developers to an audience of millions...When app stores entered the mainstream tech culture, they exposed developers to an audience of millions...",
     body: "We can’t get enough of our mobile apps. There were 204 billion apps downloads last year, and that number is rising in 2020.  When app stores entered the mainstream tech culture, they exposed developers to an audience of millions who were keen to adopt the innovative capabilities",
   },
 ];

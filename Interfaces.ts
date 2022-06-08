@@ -1,11 +1,17 @@
 export interface IndexPageProps {
   data: {
-    userId: number;
-    id: number;
+    id: string;
     title: string;
+    slug: string | any;
     body: string;
     excerpt: string;
+    mainImage: string | any;
   }[];
+  title: string;
+}
+
+export interface TitleProps {
+  title: string;
 }
 
 export interface ArticleProps {
@@ -20,9 +26,14 @@ export interface ArticleProps {
 
 export interface ArticleItemProps {
   data: {
-    id: number;
+    id: string;
+    slug: string | any;
     title: string;
+    picture?: string | any;
+    mainImage?: string | any;
     body: string;
     excerpt: string;
+    authorPicture?: string | any;
+    author?: string;
   };
 }
