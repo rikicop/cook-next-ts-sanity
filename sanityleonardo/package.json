@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "package.json",
-  "author": "Ricardo Otálora Luna <ruperto1@protonmail.com>",
+  "author": "Leonardo Luna <sanityleonardo@gmail.com>",
   "license": "UNLICENSED",
   "scripts": {
     "start": "sanity start",

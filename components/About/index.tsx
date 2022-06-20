@@ -14,6 +14,7 @@ import {
   Social,
 } from "./AboutElements";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 interface HeroProps {
   primary?: boolean;
@@ -46,6 +47,7 @@ function Hero({
   imgStart,
   start,
 }: HeroProps) {
+  const router = useRouter();
   return (
     <>
       <InfoSec lightBg={lightBg}>
@@ -56,24 +58,33 @@ function Hero({
                 <TopLine lightTopLine={lightTopLine}>{topLine}</TopLine>
                 <Heading lightText={lightText}>{headline}</Heading>
                 <Subtitle lightTextDesc={lightTextDesc}>{description}</Subtitle>
-                <Button big fontBig primary={primary}>
+                <Button
+                  big
+                  fontBig
+                  primary={primary}
+                  onClick={() =>
+                    router.push(
+                      "https://u.pcloud.link/publink/show?code=XZFTMRVZbxSEfFJ0f5jqKjwlLmS0yzScj6aV"
+                    )
+                  }
+                >
                   {buttonLabel}
                 </Button>
                 <Social>
                   <ul>
-                    <Link href="https://www.facebook.com/">
+                    <Link href="https://www.facebook.com/leonardo.luna.5851/">
                       <li>
                         <FaFacebook style={{ marginRight: "10px" }} />
                         Facebook
                       </li>
                     </Link>
-                    <Link href="https://www.twitter.com/">
+                    <Link href="https://twitter.com/leonardo_lunae">
                       <li>
                         <FaTwitter style={{ marginRight: "10px" }} />
                         Twitter
                       </li>
                     </Link>
-                    <Link href="https://www.instagram.com/">
+                    <Link href="https://www.instagram.com/leonardoluna741/">
                       <li>
                         <FaInstagram style={{ marginRight: "10px" }} />
                         Instagram

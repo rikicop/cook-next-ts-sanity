@@ -2,6 +2,7 @@
 //import React from "react";
 //import { Typewriter } from "react-simple-typewriter";
 //import { Section } from "./HeroElements";
+import { useRouter } from "next/router";
 
 import {
   Container,
@@ -48,6 +49,7 @@ function Hero({
   imgStart,
   start,
 }: HeroProps) {
+  const router = useRouter();
   return (
     <>
       <InfoSec lightBg={lightBg}>
@@ -59,7 +61,16 @@ function Hero({
                 <Heading lightText={lightText}>{headline}</Heading>
                 <Subtitle lightTextDesc={lightTextDesc}>{description}</Subtitle>
 
-                <Button big fontBig primary={primary}>
+                <Button
+                  big
+                  fontBig
+                  primary={primary}
+                  onClick={() =>
+                    router.push(
+                      "https://u.pcloud.link/publink/show?code=XZFTMRVZbxSEfFJ0f5jqKjwlLmS0yzScj6aV"
+                    )
+                  }
+                >
                   {buttonLabel}
                 </Button>
               </TextWrapper>

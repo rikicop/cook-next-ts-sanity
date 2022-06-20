@@ -28,7 +28,7 @@ const Blogs = () => {
   ];
 
   return (
-    <Section id="blogs">
+    <Section id="blog">
       <div className="title">
         <h2>Servicios!</h2>
         <h5>Donde te puedes promocionar!</h5>
@@ -71,7 +71,7 @@ const Blogs = () => {
 
 export default Blogs;
 
-const Section = styled.section`
+const Section = styled.div`
   margin: 4rem 10rem;
   display: flex;
   flex-direction: column;

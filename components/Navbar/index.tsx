@@ -1,11 +1,12 @@
 import { useState } from "react";
 import styled from "styled-components";
 import Image from "next/image";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/heroProfile.png";
 import { BsToggleOn, BsToggleOff } from "react-icons/bs";
 import { Link as LinkScroll } from "react-scroll";
 
 const Nav = styled.nav`
+  height: 14vh;
   display: flex;
   justify-content: space-between;
   margin: 1rem 1rem 1rem 1rem;
@@ -13,48 +14,42 @@ const Nav = styled.nav`
     display: flex;
     align-items: center;
     .logo {
-      img {
-        height: 5vh;
-      }
+      border: 2px solid lightgray;
+      border-radius: 500px;
     }
     .toggle {
       display: none;
     }
   }
+  /* .links es un DIV */
   .links {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 43%;
+    width: auto;
+    margin-right: 10px;
+
     ul {
       display: flex;
       list-style-type: none;
       gap: 2rem;
+      a:first-child {
+        background-color: var(--primary-color);
+        color: white;
+        border-radius: 0.3rem;
+      }
       li {
         padding: 0.5rem 1rem;
         transition: 0.3s ease-in-out;
-        &:first-of-type {
-          background-color: var(--primary-color);
-          border-radius: 0.3rem;
-          a {
-            color: #ffffff;
-          }
-        }
+        font-weight: bold;
         &:hover {
           background-color: var(--primary-color);
+          color: white;
           border-radius: 0.3rem;
-          a {
-            color: #ffffff;
-          }
-        }
-        a {
-          text-decoration: none;
-          color: #202020;
-          font-weight: bold;
-          transition: 0.3s ease-in-out;
         }
       }
     }
+
     .login-btn {
       display: flex;
       align-items: center;
@@ -105,13 +100,14 @@ const Nav = styled.nav`
         }
       }
     }
+    /* El Div de Links  */
     .links {
       position: absolute;
       background-color: #fff;
       flex-direction: column;
-      margin-top: 5rem;
+      margin-top: 4rem;
       width: 100vw;
-      padding: 5rem 0;
+      padding: 1rem 0;
       transition: 0.4s ease-in-out;
       gap: 2rem;
       ul {
@@ -142,9 +138,10 @@ const Navbar = () => {
             alt="Brand Logo"
             className="brandLogo"
             height={50}
-            width={100}
+            width={60}
           />
         </div>
+        <h3 style={{ marginLeft: "10px" }}>Dr. Leonardo Luna</h3>
         <div className="toggle">
           {navState ? (
             <BsToggleOn
@@ -161,51 +158,40 @@ const Navbar = () => {
       </div>
       <div className={`links ${navState ? "show" : "hide"}`}>
         <ul>
-          {/* 
-          <li>
-            <a href="#home">Home</a>
-          </li> 
-          */}
-          <li>
-            <LinkScroll
-              to="hero"
-              smooth={true}
-              duration={100}
-              style={{ cursor: "pointer" }}
-            >
-              Principal
-            </LinkScroll>
-          </li>
-          <li>
-            <LinkScroll
-              to="blogs"
-              smooth={true}
-              duration={100}
-              style={{ cursor: "pointer" }}
-            >
-              Blog
-            </LinkScroll>
-          </li>
-          <li>
-            <LinkScroll
-              to="portfolio"
-              smooth={true}
-              duration={100}
-              style={{ cursor: "pointer" }}
-            >
-              Portfolio
-            </LinkScroll>
-          </li>
-          <li>
-            <LinkScroll
-              to="footr"
-              smooth={true}
-              duration={100}
-              style={{ cursor: "pointer" }}
-            >
-              Contacto
-            </LinkScroll>
-          </li>
+          <LinkScroll
+            to="hero"
+            smooth={true}
+            duration={100}
+            style={{ cursor: "pointer" }}
+          >
+            <li>Principal</li>
+          </LinkScroll>
+          <LinkScroll
+            to="blog"
+            smooth={true}
+            duration={100}
+            style={{ cursor: "pointer" }}
+          >
+            <li>Blog</li>
+          </LinkScroll>
+
+          <LinkScroll
+            to="servicios"
+            smooth={true}
+            duration={100}
+            style={{ cursor: "pointer" }}
+          >
+            <li>Servicios</li>
+          </LinkScroll>
+
+          <LinkScroll
+            to="footr"
+            smooth={true}
+            duration={100}
+            style={{ cursor: "pointer" }}
+          >
+            <li>Contacto</li>
+          </LinkScroll>
         </ul>
       </div>
     </Nav>
