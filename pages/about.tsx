@@ -19,7 +19,7 @@ export default function About() {
   return (
     <>
       <Hero>
-        <Meta title="about" />
+        <Meta />
         <Heading>ABOUT</Heading>
       </Hero>
     </>
