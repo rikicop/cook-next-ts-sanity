@@ -8,6 +8,7 @@ const nextConfig = {
   images: {
     disableStaticImages: false,
   },
+  extends: ["plugin:@next/next/recommended"],
 };
 
 module.exports = nextConfig;
