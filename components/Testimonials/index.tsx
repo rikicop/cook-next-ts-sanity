@@ -19,7 +19,7 @@ export default function Testimonials() {
             </div>
             <p>
               He Printing and Typesetting the industry. <span>Lorem Ipsum</span>{" "}
-              has been the Industry's
+              has been the Industry
             </p>
           </div>
           <div className="testimonial">
@@ -28,7 +28,7 @@ export default function Testimonials() {
             </div>
             <p>
               He Printing and Typesetting the industry. <span>Lorem Ipsum</span>{" "}
-              has been the Industry's
+              has been the Industry
             </p>
           </div>
           <div className="testimonial">
@@ -37,7 +37,7 @@ export default function Testimonials() {
             </div>
             <p>
               He Printing and Typesetting the industry. <span>Lorem Ipsum</span>{" "}
-              has been the Industry's
+              has been the Industry
             </p>
           </div>
         </div>

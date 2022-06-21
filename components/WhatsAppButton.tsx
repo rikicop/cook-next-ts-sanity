@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { AiOutlineWhatsApp } from "react-icons/ai";
-export default function () {
+export default function WhatsAppButton() {
   return (
     <Div>
       <a href="https://wa.me/57311555555">
