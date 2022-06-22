@@ -33,7 +33,7 @@ const MainImage = styled.img`
 const Body = styled.div`
   p {
     font-size: 24px;
-    text-indent: 50px;
+    /* text-indent: 10px; */
     line-height: 45px;
     letter-spacing: 1.5px;
     text-align: justify;
