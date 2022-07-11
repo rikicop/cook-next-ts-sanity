@@ -130,42 +130,38 @@ const Navbar = () => {
       </div>
       <div className={`links ${navState ? "show" : "hide"}`}>
         <ul>
-          <li>
-            <Link href="https://www.instagram.com/">
-              <li>
-                <FaInstagram
-                  size={35}
-                  color="var(--primary-color)"
-                  style={{ marginRight: "10px" }}
-                />
-                Instagram
-              </li>
-            </Link>
-          </li>
-          <li>
-            <Link href="https://www.facebook.com">
-              <li>
-                <FaFacebook
-                  size={35}
-                  color="var(--primary-color)"
-                  style={{ marginRight: "10px" }}
-                />
-                Facebook
-              </li>
-            </Link>
-          </li>
-          <li>
-            <Link href="https://www.twitter.com/">
-              <li>
-                <FaTwitter
-                  size={35}
-                  color="var(--primary-color)"
-                  style={{ marginRight: "10px" }}
-                />
-                Twitter&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              </li>
-            </Link>
-          </li>
+          <Link href="https://www.instagram.com/">
+            <li>
+              <FaInstagram
+                size={35}
+                color="var(--primary-color)"
+                style={{ marginRight: "10px" }}
+              />
+              Instagram
+            </li>
+          </Link>
+
+          <Link href="https://www.facebook.com">
+            <li>
+              <FaFacebook
+                size={35}
+                color="var(--primary-color)"
+                style={{ marginRight: "10px" }}
+              />
+              Facebook
+            </li>
+          </Link>
+
+          <Link href="https://www.twitter.com/">
+            <li>
+              <FaTwitter
+                size={35}
+                color="var(--primary-color)"
+                style={{ marginRight: "10px" }}
+              />
+              Twitter&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </li>
+          </Link>
         </ul>
       </div>
     </Nav>

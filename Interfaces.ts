@@ -8,6 +8,7 @@ export interface IndexPageProps {
     mainImage: string | any;
   }[];
   title: string;
+  pSlug?: string | any;
 }
 
 export interface TitleProps {
@@ -36,4 +37,5 @@ export interface ArticleItemProps {
     authorPicture?: string | any;
     author?: string;
   };
+  pSlug?: string | any;
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import logo from "assets/heroProfile.png";
+import logo from "assets/brand.png";
 //import Button from "../Button";
 import Image from "next/image";
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
@@ -11,7 +11,7 @@ export default function Footer() {
   const links = [
     {
       title: "Contacto",
-      links: ["+57 311 5555555", "leonardoluna@gmail.com", `Sector Niza`],
+      links: ["+57 311 5555555", "cosanova@gmail.com", `Cúcuta`],
     },
   ];
   return (
@@ -19,10 +19,7 @@ export default function Footer() {
       <div className="upper__footer">
         <div className="brand">
           <Image src={logo} alt="Footer Logo" height={60} width={70} />
-          <p>
-            Psicólogo, Investigador Social y Constructor de Paz. Doctorado en
-            Estudios de Paz y Conflictos
-          </p>
+          <p>Recetas muy interesantes, cuidadas y explicadas paso a paso</p>
         </div>
         {links.map(({ title, links }) => {
           return (
@@ -38,25 +35,21 @@ export default function Footer() {
         })}
       </div>
       <div className="lower__footer">
-        <span>&copy; 2022 Dr. Leonardo Luna</span>
+        <span>&copy; 2022 CociNova</span>
         <ul>
           <li
             onClick={() =>
-              router.push("https://www.facebook.com/leonardo.luna.5851/")
+              router.push("https://www.facebook.com/ricardo.o.luna")
             }
           >
             <FaFacebook style={{ marginRight: "10px" }} />
             Facebook
           </li>
-          <li onClick={() => router.push("https://twitter.com/leonardo_lunae")}>
+          <li onClick={() => router.push("https://twitter.com/")}>
             <FaTwitter style={{ marginRight: "10px" }} />
             Twitter
           </li>
-          <li
-            onClick={() =>
-              router.push("https://www.instagram.com/leonardoluna741/")
-            }
-          >
+          <li onClick={() => router.push("https://www.instagram.com")}>
             <FaInstagram style={{ marginRight: "10px" }} /> Instagram
           </li>
         </ul>

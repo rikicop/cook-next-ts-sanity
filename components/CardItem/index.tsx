@@ -2,10 +2,12 @@ import { ArticleItemProps } from "../../Interfaces";
 import { useRouter } from "next/router";
 import { CardContainer } from "./CardItemElements";
 
-const CardItem = ({ data }: ArticleItemProps) => {
+const CardItem = ({ data, pSlug }: ArticleItemProps) => {
   const router = useRouter();
   return (
-    <CardContainer onClick={() => router.push(`/post/${data.slug.current}`)}>
+    <CardContainer
+      onClick={() => router.push(`/${pSlug}/${data.slug.current}`)}
+    >
       <div className="card-head">
         <div className="image-wrapper">
           <img src={data.mainImage} alt="post" />

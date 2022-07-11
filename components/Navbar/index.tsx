@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styled from "styled-components";
 import Image from "next/image";
-import logo from "../../assets/heroProfile.png";
+import logo from "../../assets/brand.png";
 import { BsToggleOn, BsToggleOff } from "react-icons/bs";
 import { Link as LinkScroll } from "react-scroll";
 
@@ -14,7 +14,6 @@ const Nav = styled.nav`
     display: flex;
     align-items: center;
     .logo {
-      border: 2px solid lightgray;
       border-radius: 500px;
     }
     .toggle {
@@ -138,10 +137,10 @@ const Navbar = () => {
             alt="Brand Logo"
             className="brandLogo"
             height={50}
-            width={60}
+            width={50}
           />
         </div>
-        <h3 style={{ marginLeft: "10px" }}>Dr. Leonardo Luna</h3>
+        <h3 style={{ marginLeft: "10px" }}>COCINOVA</h3>
         <div className="toggle">
           {navState ? (
             <BsToggleOn
@@ -172,7 +171,7 @@ const Navbar = () => {
             duration={100}
             style={{ cursor: "pointer" }}
           >
-            <li>Blog</li>
+            <li>Tendencias</li>
           </LinkScroll>
 
           <LinkScroll
@@ -181,7 +180,7 @@ const Navbar = () => {
             duration={100}
             style={{ cursor: "pointer" }}
           >
-            <li>Servicios</li>
+            <li>Productos</li>
           </LinkScroll>
 
           <LinkScroll

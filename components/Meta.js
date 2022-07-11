@@ -4,16 +4,10 @@ const Meta = () => {
   return (
     <Head>
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <meta
-        name="keywords"
-        content="frontera, sociologia, psicologia, psicopedagogia, educacion, tesis"
-      />
-      <meta
-        name="description"
-        content="Doctor en psicologia, psicopedagogia y educacion"
-      />
+      <meta name="keywords" content="cocina,recetas,marcas" />
+      <meta name="description" content="cocina,recetas,marcas" />
       <meta charSet="utf-8" />
-      <title>Leonardo Luna</title>
+      <title>COCINOVA</title>
     </Head>
   );
 };

@@ -23,13 +23,13 @@ const Title = styled.h1`
   text-align: center;
 `;
 
-const CardList = ({ data, title }: IndexPageProps) => {
+const CardList = ({ data, title, pSlug }: IndexPageProps) => {
   return (
     <section id="blog">
       <Title>{title}</Title>
       <Wrapper>
         {data.map((article, index) => (
-          <CardItem data={article} key={index} />
+          <CardItem data={article} key={index} pSlug={pSlug} />
         ))}
       </Wrapper>
     </section>

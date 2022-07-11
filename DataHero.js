@@ -56,13 +56,14 @@ export const homeObjFour = {
   lightTopLine: false,
   lightText: false,
   lightTextDesc: false,
-  topLine: "Coordinador de proyectos en CPAIS",
-  headline: "Profesor en Corporación Universitaria Iberoamericana",
+  topLine: "Página especializada en cocina ",
+  headline:
+    "Encontrarás recetas muy interesantes, cuidadas y explicadas paso a paso",
   description:
-    " Asistente de investigación en Arthur V. Mauro Institute for Peace & Justice Anterior: Doctors Without Borders/Médecins Sans Frontières (MSF) Egresado de la Universidad Distrital Francisco José de Caldas.",
+    "Otro de los puntos fuertes de la web es que no sólo cuenta con recetas organizadas por temática sino que también encontrarás recopilatorios según fechas o temáticas. Es decir, verás las mejores recetas para hacer con chocolate, los mejores postres de Carnaval o los mejores dulces de Navidad. También es muy completa y recomendable la sección específica de Cocinatis para trucos y consejos para cocinar en una sección específica.",
   buttonLabel: "Más información",
   imgStart: "start",
-  img: require("./assets/hero3.png"),
+  img: require("./assets/hero4.png"),
   alt: "Vault",
   start: "true",
 };

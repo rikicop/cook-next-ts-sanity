@@ -8,41 +8,43 @@ import {
   ServicesWrapper,
 } from "./ServicesElements";
 
-import { GiTeacher, GiLightBulb, GiBrain } from "react-icons/gi";
+import Image from "next/image";
+import harina from "../../assets/harina.jpg";
+import cuchillo from "../../assets/cuchillo.jpg";
+import pasta from "../../assets/pasta.jpg";
 
 const Services = () => {
   return (
     <>
       <ServicesContainer id="servicios">
-        <ServicesH1>Servicios</ServicesH1>
+        <ServicesH1>Productos</ServicesH1>
         <ServicesWrapper>
           <ServicesCard>
-            <GiTeacher size={40} color="#4B59F7" />
-            <ServicesH2>Tutorias</ServicesH2>
+            <Image src={harina} width={100} height={100} alt="torta" />
+            <ServicesH2>Harina Doña Torta</ServicesH2>
             <ServicesP>
-              Acompañamiento personalizado con el objetivo de mejorar el
-              rendimiento escolar, solucionar problemas escolares y desarrollar
-              hábitos de estudio
+              Prepara una deliciosa Torta Casera con Harina de Trigo Paspán
+              INGREDIENTES: 1/2 libra mantequilla 1 taza azúcar 2 tazas harina
+              de trigo tamizada (con un colador metálico) 1/2 taza leche 3
+              huevos...
             </ServicesP>
           </ServicesCard>
           <ServicesCard>
-            <GiLightBulb size={40} color="#4B59F7" />
-            <ServicesH2>Investigación</ServicesH2>
+            <Image src={cuchillo} width={100} height={100} alt="cuchillo" />
+            <ServicesH2>Cuchillo De Chef Profesional Fzizuo</ServicesH2>
             <ServicesP>
-              Este Servicio tiene como objetivo dar apoyo técnico e instrumental
-              a la investigación y docencia universitarias, y también, a las
-              empresas públicas o privadas que componen el tejido industrial del
-              entorno que lo soliciten.
+              FZIZUO Cuchillo de chef de estilo japonés profesional, completo
+              Tang 8.3 pulgadas hecho a mano VG10 Damasco hoja de acero Burl
+              mango madera Gyuto cuchillos de cocina con vaina para cocinar
             </ServicesP>
           </ServicesCard>
           <ServicesCard>
-            <GiBrain size={40} color="#4B59F7" />
+            <Image src={pasta} width={100} height={100} alt="pasta" />
             <ServicesH2>Asesoría Psicosocial</ServicesH2>
             <ServicesP>
-              Espacio de atención que se ofrece a la comunidad el mejoramiento
-              del manejo de las emociones, promoviendo la comunicación asertiva
-              y la resolución de conflictos por vías distintas a cualquier tipo
-              de violencia
+              Pastas La Muñeca te da momentos que te recargan de energía; no
+              contiene aditivos. Disfruta de una gran variedad de opciones para
+              deleitar las más deliciosas pastas.
             </ServicesP>
           </ServicesCard>
         </ServicesWrapper>
