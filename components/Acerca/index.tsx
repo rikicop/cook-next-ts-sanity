@@ -69,9 +69,7 @@ function Acerca({
                   fontBig
                   primary={primary}
                   onClick={() =>
-                    router.push(
-                      "https://u.pcloud.link/publink/show?code=XZFTMRVZbxSEfFJ0f5jqKjwlLmS0yzScj6aV"
-                    )
+                    router.push("https://www.facebook.com/ricardo.o.luna")
                   }
                 >
                   {buttonLabel}
